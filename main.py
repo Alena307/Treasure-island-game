@@ -28,26 +28,26 @@ print("Your mission is to find the treasure.")
 #Write your code below this line 👇
 name = input("Whats your name? ")
 print(name)
-first = input("You are crossroad. Where do you want to go? left or right")
+first = input("You are crossroad. Where do you want to go? left or right\n").lower()
 print(first)
 if first == "left":
-  print("Sorry! You fall in a whole. Game over!")
+  print("Sorry! You fall in a whole. Game over!\n")
 else:
     print(f"Good choice, {name}. ")
-    input2 = input("You cam to a lake. Do you want to swim or take a boat? Write swim or boat")
+    input2 = input("You cam to a lake. Do you want to swim or take a boat? Write swim or boat\n")
     if input2 == "swim":
-      print("What are you doing? There are so many sharkes and crocodiles in the lake. Game over!")
+      print("What are you doing? There are so many sharkes and crocodiles in the lake. Game over!\n")
     else:
       print("Wow! You crossed safe the lake!")
-      input4 = input("You arrive the island unharmed. There are 3 doors. One red, one yellow, one blue and one black. Which colour do you choose?")
+      input4 = input("You arrive the island unharmed. There are 3 doors. One red, one yellow, one blue and one black. Which colour do you choose?\n")
       print(input4)
       if input4 == "red":
         print("You chose a door that doesn't exist. Game over!")
       elif input4 == "yellow":
         print("You enter a room of beast. Game over.")
-      elif input4 == "black":
+      #elif input4 == "black":
         print("Black is like the death. Game over!")
-      elif input4 <> "black" and input4 <> "blue" and input4 <> "yellow" and input4 <> "red":
+      #elif input4 <> "black" and input4 <> "blue" and input4 <> "yellow" and input4 <> "red":
         print("Wrong answer. What colour do you choose?")
       else:
         print(f"You find the treasure! You win, {name}!")
